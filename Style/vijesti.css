@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 50px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.news-container {
+  display: grid;
+  padding: 10px;
+}
+
+.glavnaVijest {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #cce0ff; /* Light blue background */
+  border: 2px solid #000; /* Black border */
+  padding: 10px;
+}
+
+.glavnaVijest img {
+  width: 100%;
+  height: auto;
+}
+
+.visokaVijest, .kvadratnaVijest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #000; /* Black border */
+}
+
+.visokaVijest {
+  background-color: #ffcccb; /* Light red background */
+}
+
+.kvadratnaVijest {
+  background-color: #fff5cc; /* Light yellow background */
+}
+
+/* Styles for screens wider than 800px */
+@media (min-width: 800px) {
+  .news-container {
+    grid-template-columns: repeat(4, 1fr);
+    /*gap: 10px;*/
+  }
+
+  .glavnaVijest {
+    grid-column: span 4;
+    aspect-ratio: 2 / 1;
+  }
+
+  .visokaVijest {
+    grid-row: span 2;
+    aspect-ratio: 1 / 2;
+  }
+
+  .kvadratnaVijest {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Styles for screens narrower than 800px */
+@media (max-width: 799px) {
+  .news-container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    /*gap: 10px;*/
+  }
+
+  .glavnaVijest {
+    grid-column: span 2;
+    aspect-ratio: 1 / 1; /* Square aspect ratio */
+  }
+
+  .visokaVijest {
+    grid-column: span 1; /* Occupy one column */
+    grid-row: span 2;    /* Occupy two rows */
+    aspect-ratio: 1/2;  /* Let it stretch vertically */
+  }
+
+  .kvadratnaVijest {
+    grid-column: span 1; /* Occupy one column */
+    grid-row: span 1;    /* Occupy one row */
+    aspect-ratio: 1 / 1; /* Square aspect ratio */
+  }
+}
