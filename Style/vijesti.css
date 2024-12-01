@@ -21,7 +21,8 @@ iframe {
       "visoka1 kvadratna3 kvadratna4 visoka2"
       "kvadratna5 kvadratna6 visoka3 visoka4"
       "kvadratna7 kvadratna8 visoka3 visoka4";
-  padding: 5px;
+  gap: 3px;
+  padding: 1px;
 }
 
 /* Glavna vijest */
@@ -37,9 +38,8 @@ iframe {
   justify-content: left;
   box-sizing: border-box;
   margin: 0;
-  padding: 1px;
-  overflow: hidden;
-  border: 2px solid black; /* Dodan obrub */
+  padding: 1px; /* Dodaj padding da tekst ne bude preblizu rubovima */
+  overflow: hidden; /* Sprječava izlazak sadržaja iz okvira */
 }
 
 /* Visoke vijesti */
@@ -53,10 +53,11 @@ iframe {
   box-sizing: border-box;
   padding: 1px;
   overflow: hidden;
-  aspect-ratio: 1 / 2;
-  margin: 0;
-  justify-self: center;
-  border: 2px solid #555; /* Dodan obrub */
+  /*width: 25%;
+  height: 100%;*/
+  aspect-ratio: 1 / 2; /* Visina je 2x širina */
+  margin: 0;  /* Ukloni sve spoljne margine */
+  justify-self: center;  /* Centriraj visoke vijesti horizontalno */
 }
 
 /* Kvadratne vijesti */
@@ -67,12 +68,13 @@ iframe {
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
-  aspect-ratio: 1 / 1;
+  /*width: 25%;
+  height: 100%;*/
+  aspect-ratio: 1 / 1; /* Kvadratni omjer */
   box-sizing: border-box;
   padding: 1px;
   overflow: hidden;
   margin: 0;
-  border: 2px solid #555; /* Dodan obrub */
 }
 
 /* Povezivanje svake vijesti s grid area */
@@ -103,7 +105,6 @@ iframe {
           "kvadratna7 kvadratna8"
           "visoka3 visoka4"
           "visoka3 visoka4";
-      gap: 5px; /* Dodaj razmak između elemenata za manje ekrane */
   }
   .glavnaVijest {
       width: 100%;
@@ -112,6 +113,7 @@ iframe {
   }
   .visokaVijest {
       width: 100%;
+      /*height: 100%;*/
       aspect-ratio: 1 / 2;
       justify-self: center;
       align-self: center;
@@ -119,17 +121,18 @@ iframe {
   }
   .kvadratnaVijest {
       width: 100%;
+      /*height: 100%;*/
       aspect-ratio: 1 / 1;
   }
 }
 
-/* Stilovi za tekst i slike */
+/* stilovi za tekst i slike */
 .glavnaVijest h2, .visokaVijest h3, .kvadratnaVijest h3 {
-  font-size: 18px;
+  font-size: 18px; /* Relativna veličina fonta */
   line-height: 1.2;
   margin: 0;
   padding: 5px;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; /* Omogućava prelazak teksta na novu liniju ako je predug */
   text-align: left;
   object-fit: cover;
 }
@@ -139,15 +142,17 @@ iframe {
   max-height: 40%;
   margin: 0;
   padding: 5px;
-  object-fit: cover;
+  object-fit: cover; /* Održava proporcije slike unutar okvira */
 }
 
+/* Osiguraj da tekst unutar .glavnaVijest ne izlazi izvan grida */
 .glavnaVijest p, .visokaVijest p, .kvadratnaVijest p {
-  font-size: clamp(10px, 1.5vw, 14px);
+  font-size: clamp(10px, 1.5vw, 14px); 
   line-height: 1.4;
   text-align: justify;
   margin: 0;
   padding: 5px;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; /* Prelazak teksta na novu liniju */
   object-fit: cover;
 }
+

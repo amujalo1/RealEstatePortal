@@ -115,17 +115,27 @@ iframe {
       scroll-snap-align: start;
   }
 
-  /* Stil za navigaciona dugmad */
-  .navigation-buttons {
-      display: block;
-      text-align: center;
-      margin-top: 10px;
-  }
+  
 }
 
-/* Sakrij dugmad za ekrane veće od 600px */
-@media (min-width: 600px) {
-  .navigation-buttons {
-      display: none;
-  }
+
+.navigation-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.navigation-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background-color: #45a049;
 }
