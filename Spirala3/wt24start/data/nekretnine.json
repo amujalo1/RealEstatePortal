@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "tip_nekretnine": "Stan",
+        "naziv": "Useljiv stan Sarajevo",
+        "kvadratura": 58,
+        "cijena": 232000,
+        "tip_grijanja": "plin",
+        "lokacija": "Novo Sarajevo",
+        "godina_izgradnje": 2019,
+        "datum_objave": "01.10.2023.",
+        "opis": "Sociis natoque penatibus.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "jedan"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "dva"
+            },
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "tri"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "cetrii"
+            },
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "pet"
+            },
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "sest"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "zedam"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "osam"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "tip_nekretnine": "Poslovni prostor",
+        "naziv": "Mali poslovni prostor",
+        "kvadratura": 20,
+        "cijena": 70000,
+        "tip_grijanja": "struja",
+        "lokacija": "Centar",
+        "godina_izgradnje": 2005,
+        "datum_objave": "20.08.2023.",
+        "opis": "Magnis dis parturient montes.",
+        "upiti": [
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "Integer tincidunt."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "tip_nekretnine": "Kuća",
+        "naziv": "Porodična kuća Ilidža",
+        "kvadratura": 150,
+        "cijena": 350000,
+        "tip_grijanja": "drva",
+        "lokacija": "Ilidža",
+        "godina_izgradnje": 2010,
+        "datum_objave": "15.09.2023.",
+        "opis": "Kuća sa velikim dvorištem i baštom.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li je kuća u dobrom stanju?"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "tip_nekretnine": "Poslovni prostor",
+        "naziv": "Prostor za kancelarije",
+        "kvadratura": 100,
+        "cijena": 200000,
+        "tip_grijanja": "centralno",
+        "lokacija": "Centar",
+        "godina_izgradnje": 2015,
+        "datum_objave": "05.11.2023.",
+        "opis": "Moderan poslovni prostor u centru grada.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Koliko je kancelarija u prostoru?"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "tip_nekretnine": "Vikendica",
+        "naziv": "Vikendica na Bjelašnici",
+        "kvadratura": 80,
+        "cijena": 120000,
+        "tip_grijanja": "peć",
+        "lokacija": "Bjelašnica",
+        "godina_izgradnje": 2000,
+        "datum_objave": "10.07.2023.",
+        "opis": "Idealno mjesto za odmor u prirodi.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li ima internet?"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "tip_nekretnine": "Stan",
+        "naziv": "Luksuzni stan u centru",
+        "kvadratura": 120,
+        "cijena": 450000,
+        "tip_grijanja": "podno",
+        "lokacija": "Centar",
+        "godina_izgradnje": 2020,
+        "datum_objave": "25.09.2023.",
+        "opis": "Moderan stan sa pogledom na grad.",
+        "upiti": [
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "Da li je stan opremljen?"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "Da li ima parking?"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "tip_nekretnine": "Kuća",
+        "naziv": "Kuća na periferiji",
+        "kvadratura": 200,
+        "cijena": 280000,
+        "tip_grijanja": "plin",
+        "lokacija": "Novo Sarajevo",
+        "godina_izgradnje": 1995,
+        "datum_objave": "12.06.2023.",
+        "opis": "Kuća sa velikim dvorištem i garažom.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li ima parking?"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "Da li je prostor renoviran?"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "tip_nekretnine": "Poslovni prostor",
+        "naziv": "Prostor za prodavnicu",
+        "kvadratura": 50,
+        "cijena": 90000,
+        "tip_grijanja": "struja",
+        "lokacija": "Grbavica",
+        "godina_izgradnje": 2010,
+        "datum_objave": "30.05.2023.",
+        "opis": "Prostor pogodan za prodavnicu ili kafić.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li je prostor renoviran?"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "tip_nekretnine": "Stan",
+        "naziv": "Stan na Grbavici",
+        "kvadratura": 65,
+        "cijena": 180000,
+        "tip_grijanja": "centralno",
+        "lokacija": "Grbavica",
+        "godina_izgradnje": 2008,
+        "datum_objave": "18.04.2023.",
+        "opis": "Udoban stan u mirnom dijelu grada.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li je stan uknjižen?"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "tip_nekretnine": "Kuća",
+        "naziv": "Kuća sa bazenom",
+        "kvadratura": 250,
+        "cijena": 500000,
+        "tip_grijanja": "solar",
+        "lokacija": "Ilidža",
+        "godina_izgradnje": 2018,
+        "datum_objave": "22.03.2023.",
+        "opis": "Luksuzna kuća sa bazenom i baštom.",
+        "upiti": [
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "Da li je bazen opermljen?"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "tip_nekretnine": "Vikendica",
+        "naziv": "Vikendica na Igmanu",
+        "kvadratura": 70,
+        "cijena": 95000,
+        "tip_grijanja": "peć",
+        "lokacija": "Igman",
+        "godina_izgradnje": 1990,
+        "datum_objave": "14.02.2023.",
+        "opis": "Vikendica sa predivnim pogledom na planinu.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li ima struju?"
+            },
+            {
+                "korisnik_id": 2,
+                "tekst_upita": "Da li ima dozvolu za ugostiteljstvo?"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "tip_nekretnine": "Poslovni prostor",
+        "naziv": "Prostor za restoran",
+        "kvadratura": 300,
+        "cijena": 600000,
+        "tip_grijanja": "centralno",
+        "lokacija": "Stari Grad",
+        "godina_izgradnje": 2000,
+        "datum_objave": "05.01.2023.",
+        "opis": "Veliki prostor pogodan za restoran.",
+        "upiti": [
+            {
+                "korisnik_id": 1,
+                "tekst_upita": "Da li ima dozvolu za ugostiteljstvo?"
+            }
+        ]
+    }
+]

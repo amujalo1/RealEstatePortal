@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bs-BA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistika</title>
+    <link rel="stylesheet" type="text/css" href="../Style/statistika.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <iframe src="meni.html"></iframe>
+
+    <h1>Statistika Nekretnina</h1>
+    
+    <div id="input-sekcija">
+        <h2>Filtriranje dostupnih nekretnina</h2>
+
+        <div>
+            <label for="kvadratura-kriterij">Kriteriji (npr. tip_nekretnine:Stan):</label>
+            <input id="kvadratura-kriterij" placeholder="Primjer: tip_nekretnine:Stan">
+        </div>
+        <button onclick="prikaziProsjecnuKvadraturu()">Izračunaj prosječnu kvadraturu</button>
+        <div id="rezultat-kvadratura"></div>
+
+        <div>
+            <label for="outlier-kriterij">Kriteriji (npr. tip_nekretnine:Stan):</label>
+            <input id="outlier-kriterij" placeholder="Primjer: tip_nekretnine:Stan">
+            <label for="naziv-svojstva">Naziv svojstva (npr. cijena):</label>
+            <input id="naziv-svojstva" placeholder="Primjer: cijena">
+        </div>
+        <button onclick="prikaziOutlier()">Prikaži outlier</button>
+        <div id="rezultat-outlier"></div>
+
+        <div>
+            <label for="korisnik-id">ID korisnika za analizu upita nekretnina:</label>
+            <input id="korisnik-id" type="number" placeholder="Unesite ID">
+        </div>
+        <button onclick="prikaziMojeNekretnine()">Prikaži moje upite nekretnina</button>
+        <div id="rezultat-nekretnine"></div>
+
+
+        <h2>Analiza tržišta</h2>
+        <div>
+            <label for="periodi">Periodi (npr. 2000-2010,2010-2024):</label>
+            <input id="periodi" placeholder="2000-2010,2011-2024">
+        </div>
+        <div>
+            <label for="rasponi-cijena">Rasponi cijena (npr. 10000-150000,150000-1000000):</label>
+            <input id="rasponi-cijena" placeholder="10000-150000,150000-1000000">
+        </div>
+        <button onclick="iscrtajHistogram()">Iscrtaj histogram</button>
+
+    </div>
+
+    <div id="histogrami">
+        <!-- Chart canvases će se dinamički dodavati ovdje -->
+    </div>
+
+    <script src="../Scripts/nekretnineStaticData.js"></script>
+    <script src="../Scripts/SpisakNekretnina.js"></script>
+    <script src="../Scripts/StatistikaNekretnina.js"></script>
+    <script src="../Scripts/statistika.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bs-BA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalji Nekretnine</title>
+    <link rel="stylesheet" type="text/css" href="../Style/detalji.css">
+    <script src="../Scripts/carousel.js"></script>
+    <script src="../Scripts/detalji.js"></script>
+    <script src="../scripts/PoziviAjax.js"></script>
+
+</head>
+
+<body>
+    <iframe src="meni.html"></iframe>
+
+    <div id="osnovno">
+        <img src="../resources/1.jpg" alt="Nekretnina">
+        <p><strong>Naziv:</strong> <span id="naziv-nekretnine"></span></p>
+        <p><strong>Kvadratura:</strong> <span id="kvadratura-nekretnine"></span> m²</p>
+        <p><strong>Cijena:</strong> <span id="cijena-nekretnine"></span> KM</p>
+    </div>
+
+    <h3>DETALJI</h3>
+    <div id="detalji">
+        <div id="kolona1">
+            <p><strong>Tip grijanja:</strong> <span id="tip-grijanja"></span></p>
+            <p><strong>Lokacija:</strong> 
+                <a id="lokacija-link" href="#" target="_blank">
+                    <span id="lokacija"></span>
+                </a>
+            </p>
+        </div>
+        <div id="kolona2">
+            <p><strong>Godina izgradnje:</strong> <span id="godina-izgradnje"></span></p>
+            <p><strong>Datum objave oglasa:</strong> <span id="datum-objave"></span></p>
+        </div>
+        <div id="opis">
+            <p><strong>Opis:</strong> <span id="opis-nekretnine"></span></p>
+        </div>
+    </div>
+
+    <h3>UPITI</h3>
+    <div id="upiti"></div>
+
+    <div class="navigation-buttons">
+        <button id="btnLijevo">Lijevo</button>
+        <button id="btnDesno">Desno</button>
+    </div>
+
+</body>
+
+</html>
