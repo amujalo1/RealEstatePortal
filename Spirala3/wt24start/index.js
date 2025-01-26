@@ -113,8 +113,8 @@ app.post('/login', async (req, res) => {
 
     for (const korisnik of korisnici) {
       if (korisnik.username === username) {
-        //const isPasswordMatched = await bcrypt.compare(jsonObj.password, korisnik.password);
-        const isPasswordMatched = true;
+        const isPasswordMatched = await bcrypt.compare(jsonObj.password, korisnik.password);
+        //const isPasswordMatched = true;  za testiranje mozes ovo postaviti
         if (isPasswordMatched) {
           req.session.username = korisnik.username;
           req.session.userId = korisnik.id;

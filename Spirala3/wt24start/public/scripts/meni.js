@@ -7,6 +7,7 @@ window.onload = function () {
     const detaljiLink = document.getElementById('detaljiLink');
     const prijavaLink = document.getElementById('prijavaLink');
     const odjavaLink = document.getElementById('odjavaLink');
+    const upitiLink = document.getElementById('upitiLink');
 
     // Ako je korisnik prijavljen, pokažite opciju "Profil", inače pokažite opcije "Nekretnine", "Detalji" i "Prijava"
     if (loggedIn) {
@@ -15,12 +16,14 @@ window.onload = function () {
       detaljiLink.style.display = 'block';
       prijavaLink.style.display = 'none';
       odjavaLink.style.display = 'block';
+      upitiLink.style.display = 'block';
     } else {
       profilLink.style.display = 'none';
       nekretnineLink.style.display = 'block';
       detaljiLink.style.display = 'block';
       prijavaLink.style.display = 'block';
       odjavaLink.style.display = 'none';
+      upitiLink.style.display = 'none';
     }
   }
 
