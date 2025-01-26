@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bs-BA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalji Nekretnine</title>
+    <link rel="stylesheet" type="text/css" href="../Style/detalji.css">
+    <script src="../Scripts/carousel.js"></script>
+    <script src="../Scripts/detalji.js"></script>
+    <script src="../scripts/PoziviAjax.js"></script>
+
+</head>
+
+<body>
+    <iframe src="meni.html"></iframe>
+
+    <div id="osnovno">
+        <img src="../resources/1.jpg" alt="Nekretnina">
+        <p><strong>Naziv:</strong> <span id="naziv-nekretnine"></span></p>
+        <p><strong>Kvadratura:</strong> <span id="kvadratura-nekretnine"></span> m²</p>
+        <p><strong>Cijena:</strong> <span id="cijena-nekretnine"></span> KM</p>
+    </div>
+
+    <h3>DETALJI</h3>
+    <div id="detalji">
+        <div id="kolona1">
+            <p><strong>Tip grijanja:</strong> <span id="tip-grijanja"></span></p>
+            <p><strong>Lokacija:</strong> 
+                <a id="lokacija-link" href="#" target="_blank">
+                    <span id="lokacija"></span>
+                </a>
+            </p>
+        </div>
+        <div id="kolona2">
+            <p><strong>Godina izgradnje:</strong> <span id="godina-izgradnje"></span></p>
+            <p><strong>Datum objave oglasa:</strong> <span id="datum-objave"></span></p>
+        </div>
+        <div id="opis">
+            <p><strong>Opis:</strong> <span id="opis-nekretnine"></span></p>
+        </div>
+    </div>
+    <div id="interesovanje-forma">
+        <h3>Dodaj novo interesovanje</h3>
+        <form id="forma-interesovanje">
+            <label for="tip-interesovanja">Tip interesovanja:</label>
+            <select id="tip-interesovanja" name="tip-interesovanja">
+                <option value="upit">Upit</option>
+                <option value="zahtjev">Zahtjev</option>
+                <option value="ponuda">Ponuda</option>
+            </select>
+    
+            <!-- Upit Section -->
+            <div id="upit-section" class="interesovanje-section">
+                <label for="tekst-upita">Tekst upita:</label>
+                <textarea id="tekst-upita" name="tekst-upita"></textarea>
+            </div>
+    
+            <!-- Zahtjev Section -->
+            <div id="zahtjev-section" class="interesovanje-section">
+                <label for="tekst-zahtjeva">Tekst zahtjeva:</label>
+                <textarea id="tekst-zahtjeva" name="tekst-zahtjeva"></textarea>
+                <label for="trazeni-datum">Traženi datum:</label>
+                <input type="date" id="trazeni-datum" name="trazeni-datum">
+            </div>
+    
+            <!-- Ponuda Section -->
+            <div id="ponuda-section" class="interesovanje-section">
+                <label for="tekst-ponude">Tekst ponude:</label>
+                <textarea id="tekst-ponude" name="tekst-ponude"></textarea>
+                <label for="ponuda-cijena">Cijena ponude:</label>
+                <input type="number" id="ponuda-cijena" name="ponuda-cijena">
+                <label for="trazeni-datum">Traženi datum:</label>
+                <input type="date" id="trazeni-datum-ponuda" name="trazeni-datum-ponuda">
+                <label for="vezana-ponuda">Vezana ponuda:</label>
+                <select id="vezana-ponuda" name="vezana-ponuda" disabled>
+                <option value="">Nema ranijih ponuda</option>
+                </select>
+            </div>
+    
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+    
+    
+
+
+    <h3>UPITI</h3>
+<div id="upiti"></div>
+<div class="navigation-buttons">
+    <button id="btnLijevoUpiti">Lijevo</button>
+    <button id="btnDesnoUpiti">Desno</button>
+</div>
+
+<h3>ZAHTJEVI</h3>
+<div id="zahtjevi"></div>
+<div class="navigation-buttons">
+    <button id="btnLijevoZahtjevi">Lijevo</button>
+    <button id="btnDesnoZahtjevi">Desno</button>
+</div>
+
+<h3>PONUDE</h3>
+<div id="ponude"></div>
+<div class="navigation-buttons">
+    <button id="btnLijevoPonude">Lijevo</button>
+    <button id="btnDesnoPonude">Desno</button>
+</div>
+
+</body>
+
+</html>
