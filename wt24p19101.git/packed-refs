@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+f8ee3d7ffca1b7ce55bb4e63b71f016d1c53b93b refs/heads/master
+0f6411b642e53965ea3224fb11b4ae2ac526a081 refs/heads/spirala1
+28a844a9ba5548ab2454ba223e95c96ff38e2501 refs/heads/spirala2
+a10bfab623dd1477c6abcdf7b112fc7d820428c9 refs/heads/spirala3
